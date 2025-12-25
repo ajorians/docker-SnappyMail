@@ -1,0 +1,7 @@
+services:
+  snappymail:
+    image: ghcr.io/ajorians/snappymail:latest
+    container_name: snappymail
+    ports:
+      - 5010:80 # <Host Port>:<Container Port>
+    restart: unless-stopped
